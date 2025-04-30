@@ -2,13 +2,6 @@
   (:refer-clojure :exclude [fn defn])
   #?(:cljs (:require-macros [acme.frontend.macros])))
 
-;; TODO: Is it arg names?
-;; TODO: Is it the names `defn` and `fn` and the `:refer-clojure`?
-
-;; TODO: Is it the same without `defn` as the name? If so, change all the names.
-;;       - Ah, `defn` and `defn*` behave the same.
-;;       - So compare `def-x` and `x`.
-
 ;; TODO: Don't forget: You have some macros of your own that cock up.
 
 ;; TODO: Try CIDER 1.18.
