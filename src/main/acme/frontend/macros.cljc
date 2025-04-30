@@ -2,25 +2,6 @@
   (:refer-clojure :exclude [fn defn])
   #?(:cljs (:require-macros [acme.frontend.macros])))
 
-#?(:clj
-   (clojure.core/defmacro mac1
-     {:style/indent 2}
-     [a b c d]
-     `(do ~a ~b ~c ~d)))
-
-#?(:clj
-   (clojure.core/defmacro mac2
-     [a b c d]
-     `(do ~a ~b ~c ~d)))
-
-#?(:clj
-   (clojure.core/defmacro mac3 [a & fdecl]
-     `(do ~a ~@fdecl)))
-
-(clojure.core/defmacro mac4 [a & fdecl]
-  `(do ~a ~@fdecl))
-
-
 ;; Is it arg names?
 ;; Is it the names `defn` and `fn` and the `:refer-clojure`?
 

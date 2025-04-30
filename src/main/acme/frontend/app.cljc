@@ -6,26 +6,6 @@
 
 (defn init [] (println "Hello World"))
 
-(m/mac1 1
-    2
-  3
-  4)
-
-(m/mac2 1
-        2
-        3
-        4)
-
-(m/mac3 1
-  2
-  3
-  4)
-
-(m/mac4 1
-  2
-  3
-  4)
-
 ;;;; ___________________________________________________________________________
 
 ;; Below text after "->" describes the indentation changes after connecting to
