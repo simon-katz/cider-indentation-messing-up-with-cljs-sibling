@@ -6,6 +6,8 @@
 
 ;; TODO: Try CIDER 1.18.
 
+;; TODO: Try a miminal CLJ/CLJS project. (Need to find out what that is.)
+
 ;;;; _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 (clojure.core/defmacro defn [nm & fdecl] ; arg list copied from Electric Clojure
