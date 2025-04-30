@@ -13,20 +13,26 @@
 
 ;; TODO: Try CIDER 1.18.
 
+;;;; _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
 (clojure.core/defmacro defn [nm & fdecl] ; arg list copied from Electric Clojure
   `(clojure.core/defn ~nm ~@fdecl))
-
-(clojure.core/defmacro defn* [nm & fdecl]
-  `(clojure.core/defn ~nm ~@fdecl))
-
-(clojure.core/defmacro defn** [nm args & body]
-  `(clojure.core/defn ~nm ~args ~@body))
 
 (clojure.core/defmacro fn [& args] ; arg list copied from Electric Clojure
   `(clojure.core/fn ~@args))
 
+;;;; _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+(clojure.core/defmacro defn* [nm & fdecl]
+  `(clojure.core/defn ~nm ~@fdecl))
+
 (clojure.core/defmacro fn* [& args]
   `(clojure.core/fn ~@args))
+
+;;;; _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+(clojure.core/defmacro defn** [nm args & body]
+  `(clojure.core/defn ~nm ~args ~@body))
 
 (clojure.core/defmacro fn** [args & body]
   `(clojure.core/fn ~args ~@body))
