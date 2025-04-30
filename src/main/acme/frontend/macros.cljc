@@ -41,3 +41,11 @@
 
 (clojure.core/defmacro fn** [args & body]
   `(clojure.core/fn ~args ~@body))
+
+;; TODO: Is it the same without `defn` as the name? If so, change all the names.
+;;       - Ah, `defn` and `defn*` behave the same.
+;;       - So compare `def-x` and `x`.
+
+;; TODO: Don't forget: You have some macros of your own that cock up.
+
+;; TODO: Try CIDER 1.18.
