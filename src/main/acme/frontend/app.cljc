@@ -12,6 +12,8 @@
 ;; a sibling CLJS REPL. I've used [good] or [bad] to say
 ;; whether I think the change is good or bad.
 
+;;;; _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
 (m/defn defn-1 []
   3 ; -> function style [bad]
   4 ; -> function style [bad]
