@@ -92,3 +92,37 @@
     []
   2
   3)
+
+;;;; _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+;;;; These are exactly like `defn` and `fn` except that they don't begin with
+;;;; `def`.
+
+;;;; For these, the indentation does not change after connecting to a sibling
+;;;; CLJS REPL.
+
+;;;; The indentation is inconsistent -- sometimes function-style and sometimes
+;;;; macro-style.
+
+(m/x-defn x-defn-1 [] ; function-style indentation
+          3
+          4)
+
+(m/x-defn x-defn-2 ; macro-style indentation
+  []
+  3
+  4)
+
+(m/x-defn ; macro-style indentation
+    x-defn-3
+  []
+  3
+  4)
+
+(m/x-fn [] ; function-style indentation
+        2
+        3)
+
+(m/x-fn ; macro-style indentation
+  []
+  2
+  3)
