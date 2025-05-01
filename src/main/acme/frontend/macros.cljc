@@ -2,8 +2,6 @@
   (:refer-clojure :exclude [fn defn])
   #?(:cljs (:require-macros [acme.frontend.macros])))
 
-;; TODO: Try CIDER 1.18.
-
 ;;;; _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 (clojure.core/defmacro defn [nm & fdecl] ; arg list copied from Electric Clojure

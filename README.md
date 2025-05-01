@@ -2,6 +2,9 @@
 
 This repo can be used to show that, in CIDER, indentation of macro calls in a CLJ/CLJS project changes after connecting to a sibling CLJS REPL.
 
+Checked with CIDER 1.17 and 1.18.
+
+
 This is a shadow-cljs project, but I get the same behaviour in a Figwheel project.
 
 The problem can be seen by following the following steps:
