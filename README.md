@@ -22,7 +22,7 @@ The problem can be seen by following the following steps:
 - When you have a CLJ REPL, evaluate the contents of the `acme.frontend.app` namespace.
 
 - Reindent the whole namespace.
-  - Observe that nothing changes (or, if you're repeating this step, that the indentation returns to the original). The indentation here is good.
+  - Observe that nothing changes (or, if you're repeating this step, that the indentation returns to the original).
 
 - Run `M-x cider-connect-sibling-cljs`.
   - Choose `shadow` in response to "Select ClojureScript REPL type".
