@@ -10,11 +10,12 @@ This is a shadow-cljs project, but I get the same behaviour in a Figwheel projec
 
 This project requires node.js and npm, as documented at https://shadow-cljs.github.io/docs/UsersGuide.html#_standalone_via_code_npm_code
 
+At the command line, run `npm install`.
+
+
 ## Demonstrating the problem
 
 The problem can be seen by following the following steps:
-
-- At the command line, run `npm install`.
 
 - In Emacs, run `M-x cider-jack-in-clj`.
 
