@@ -2,11 +2,7 @@
   (:refer-clojure :exclude [fn defn])
   #?(:cljs (:require-macros [acme.frontend.macros])))
 
-;; TODO: Don't forget: You have some macros of your own that cock up.
-
 ;; TODO: Try CIDER 1.18.
-
-;; TODO: Try a miminal CLJ/CLJS project. (Need to find out what that is.)
 
 ;;;; _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
