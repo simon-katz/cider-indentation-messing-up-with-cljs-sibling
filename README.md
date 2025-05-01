@@ -4,12 +4,19 @@ This repo can be used to show that, in CIDER, indentation of macro calls in a CL
 
 Checked with CIDER 1.17 and 1.18.
 
-
 This is a shadow-cljs project, but I get the same behaviour in a Figwheel project.
+
+## Prerequisites
+
+This project requires node.js and npm, as documented at https://shadow-cljs.github.io/docs/UsersGuide.html#_standalone_via_code_npm_code
+
+## Demonstrating the problem
 
 The problem can be seen by following the following steps:
 
-- Run `M-x cider-jack-in-clj`.
+- At the command line, run `npm install`.
+
+- In Emacs, run `M-x cider-jack-in-clj`.
 
 - When you have a CLJ REPL, evaluate the contents of the `acme.frontend.app` namespace.
 
@@ -21,7 +28,7 @@ The problem can be seen by following the following steps:
   - Choose `:frontend` in response to "Select shadow-cljs build".
 
 - Re-indent the whole namespace again.
-  - Observe that some indentation changes, and that the changes are not good.
+  - Observe that some indentation changes and that the changes are a mixture of good and bad, as mentioned in the comments on the lines that change.
   - It makes no difference whether the current REPL (as defined at https://docs.cider.mx/cider/usage/managing_connections.html#current-repl) is the CLJ one or the CLJS one.
 
 - Kill the CLJS REPL. Observe that re-indenting the namespace makes no further changes. (Still not good.)
