@@ -32,7 +32,7 @@ The problem can be seen by following the following steps:
   - Observe that some indentation changes and that the changes are a mixture of good and bad, as mentioned in the comments on the lines that change.
   - It makes no difference whether the current REPL (as defined at https://docs.cider.mx/cider/usage/managing_connections.html#current-repl) is the CLJ one or the CLJS one.
 
-- Kill the CLJS REPL. Observe that re-indenting the namespace makes no further changes. (Still not good.)
+- Kill the CLJS REPL. Observe that re-indenting the namespace makes no further changes.
 
 - Kill the CLJ REPL and start over. The same behaviour repeats.
 
